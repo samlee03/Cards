@@ -21,6 +21,7 @@
 		82BF9BFA2D84D6E5009BE013 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF9BF92D84D6E5009BE013 /* Operators.swift */; };
 		82BF9BFD2D84E179009BE013 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF9BFC2D84E179009BE013 /* Settings.swift */; };
 		82BF9C002D84E25D009BE013 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF9BFF2D84E25D009BE013 /* ColorExtensions.swift */; };
+		82BF9C042D931D92009BE013 /* CardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF9C032D931D92009BE013 /* CardToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		82BF9BF92D84D6E5009BE013 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		82BF9BFC2D84E179009BE013 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		82BF9BFF2D84E25D009BE013 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		82BF9C032D931D92009BE013 /* CardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				82BF9BEC2D839117009BE013 /* SingleCardView.swift */,
 				82BF9BEE2D8395A0009BE013 /* ToolbarSelection.swift */,
 				82BF9BF02D8395E5009BE013 /* BottomToolbar.swift */,
+				82BF9C032D931D92009BE013 /* CardToolbar.swift */,
 			);
 			path = "Single Card Views";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				82BF9BEB2D839048009BE013 /* CardThumbnail.swift in Sources */,
 				82BF9BFA2D84D6E5009BE013 /* Operators.swift in Sources */,
+				82BF9C042D931D92009BE013 /* CardToolbar.swift in Sources */,
 				82BF9BDC2D838DAC009BE013 /* ContentView.swift in Sources */,
 				82BF9BF52D84D30D009BE013 /* ResizableView.swift in Sources */,
 				82BF9BE92D838F64009BE013 /* CardsListView.swift in Sources */,
