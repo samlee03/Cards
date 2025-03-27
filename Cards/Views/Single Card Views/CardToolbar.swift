@@ -12,6 +12,30 @@ struct CardToolbar: ViewModifier {
     @Binding var currentModal: ToolbarSelection?
     @Binding var card: Card
     @State private var stickerImage: UIImage?
+    var menu: some View {
+        Menu {
+            Button {
+                if UIPasteboard.general.hasImages {
+                    if let images = UIPasteboard.general.images {
+                        for image in images {
+                            card.addElement(uiImage: image)
+                        }
+                    }
+                } else if UIPasteboard.general.hasStrings {
+                    if let strings = UIPasteboard.general.strings {
+                        for text in strings {
+                            card.addElement(text: TextElement(text: text))
+                        }
+                    }
+                }
+            } label: {
+                Label("Paste", systemImage: "doc.on.clipboard")
+            }
+            .disabled(!UIPasteboard.general.hasImages && !UIPasteboard.general.hasStrings)
+        } label: {
+            Label("Add", systemImage: "elipsis.circle")
+        }
+    }
     func body(content: Content) -> some View {
         content
             .toolbar {
@@ -21,7 +45,12 @@ struct CardToolbar: ViewModifier {
                     }
                 }
                 ToolbarItem(placement: .bottomBar) {
-                    BottomToolbar(modal: $currentModal)
+                    BottomToolbar(card: $card, modal: $currentModal)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    menu
+                    .labelStyle(.iconOnly)
+                    .buttonBorderShape(.capsule)
                 }
             
             }

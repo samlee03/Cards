@@ -18,6 +18,9 @@ struct CardDetailView: View {
                 
                 
                 CardElementView(element: element)
+                    .elementContextMenu(
+                        card: $card,
+                        element: $element)
                     .resizableView(transform: $element.transform)
                     .frame(
                         width: element.transform.size.width,
@@ -25,6 +28,15 @@ struct CardDetailView: View {
                     )
             }
         }
+    
+        .dropDestination(for: CustomTransfer.self) { items, location in
+            print(location)
+            Task {
+                card.addElements(from: items)
+            }
+            return !items.isEmpty
+        }
+        
     }
 }
 
