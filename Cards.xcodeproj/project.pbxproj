@@ -36,6 +36,8 @@
 		82DF49DF2D96043100FCFFA0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF49DE2D96043100FCFFA0 /* UIImageExtensions.swift */; };
 		82DF49E12D96060E00FCFFA0 /* CustomTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF49E02D96060E00FCFFA0 /* CustomTransfer.swift */; };
 		82DF49E32D960CE400FCFFA0 /* ElementContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF49E22D960CE400FCFFA0 /* ElementContextMenu.swift */; };
+		82DF49E72D99AE3700FCFFA0 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF49E62D99AE3700FCFFA0 /* Shapes.swift */; };
+		82DF49E92D99B70700FCFFA0 /* FrameModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF49E82D99B70700FCFFA0 /* FrameModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		82DF49DE2D96043100FCFFA0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		82DF49E02D96060E00FCFFA0 /* CustomTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransfer.swift; sourceTree = "<group>"; };
 		82DF49E22D960CE400FCFFA0 /* ElementContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementContextMenu.swift; sourceTree = "<group>"; };
+		82DF49E62D99AE3700FCFFA0 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		82DF49E82D99B70700FCFFA0 /* FrameModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				82BF9C072D93248D009BE013 /* Card.swift */,
 				82BF9C092D932500009BE013 /* CardStore.swift */,
 				82DF49E02D96060E00FCFFA0 /* CustomTransfer.swift */,
+				82DF49E62D99AE3700FCFFA0 /* Shapes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				82BF9C152D935D6F009BE013 /* StickerModal.swift */,
 				82DF49DC2D95FE0C00FCFFA0 /* PhotosModal.swift */,
+				82DF49E82D99B70700FCFFA0 /* FrameModal.swift */,
 			);
 			path = "Card Modal Views";
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 				82BF9C162D935D6F009BE013 /* StickerModal.swift in Sources */,
 				82BF9C0A2D932500009BE013 /* CardStore.swift in Sources */,
 				82BF9C0C2D932E3B009BE013 /* PreviewData.swift in Sources */,
+				82DF49E92D99B70700FCFFA0 /* FrameModal.swift in Sources */,
 				82BF9BFA2D84D6E5009BE013 /* Operators.swift in Sources */,
 				82BF9C042D931D92009BE013 /* CardToolbar.swift in Sources */,
 				82DF49DF2D96043100FCFFA0 /* UIImageExtensions.swift in Sources */,
@@ -287,6 +294,7 @@
 				82BF9BFD2D84E179009BE013 /* Settings.swift in Sources */,
 				82BF9BDA2D838DAC009BE013 /* CardsApp.swift in Sources */,
 				82DF49DD2D95FE0C00FCFFA0 /* PhotosModal.swift in Sources */,
+				82DF49E72D99AE3700FCFFA0 /* Shapes.swift in Sources */,
 				82BF9C002D84E25D009BE013 /* ColorExtensions.swift in Sources */,
 				82DF49E12D96060E00FCFFA0 /* CustomTransfer.swift in Sources */,
 			);

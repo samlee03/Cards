@@ -28,6 +28,7 @@ struct ImageElement: CardElement {
                 UIImage(named: "error-image") ??
                 UIImage())
     }
+    var frameIndex: Int?
     
 }
 struct TextElement: CardElement {
@@ -37,3 +38,5 @@ struct TextElement: CardElement {
     var textColor = Color.black
     var textFont = "Gill Sans"
 }
+
+
