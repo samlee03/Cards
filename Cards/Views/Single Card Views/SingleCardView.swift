@@ -15,7 +15,9 @@ struct SingleCardView: View {
         NavigationStack {
             CardDetailView(card: $card)
                 .modifier(CardToolbar(currentModal: $currentModal, card: $card))
-                
+                .onDisappear {
+                    card.save()
+                }
         }
     }
     var content: some View {
